@@ -67,8 +67,8 @@ h1 {
 h2 {
     font-style: italic;
     font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
     font-size: 2.2rem;
     line-height: 1; 
 }
@@ -76,7 +76,7 @@ h2 {
 h3 {
     font-style: italic;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
     line-height: 1; 
@@ -168,8 +168,8 @@ article {
 }
 
 section {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
 }
 
 p,
