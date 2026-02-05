@@ -41,7 +41,21 @@
 
 /* Tufte CSS styles */
 html {
-    font-size: 15px; 
+    font-size: 15px;
+}
+
+/* Navigation */
+nav {
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+nav a {
+    margin-right: 0.3em;
+    margin-left: 0.3em;
 }
 
 body {
@@ -138,9 +152,9 @@ p.subtitle {
 	font-style: et-book, roman, serif;
 	font-size: 1.2rem;
     margin-top: 0rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     display: block;
-    line-height: 1.1; 
+    line-height: 1.1;
     text-indent: -1rem;
 	margin-left: 1rem;
 }
@@ -305,6 +319,11 @@ a:link::-moz-selection {
     background: #b4d5fe;
 }
 
+/* Link hover state */
+a:hover {
+    color: #a00000;
+}
+
 /* Sidenotes, margin notes, figures, captions */
 img {
     max-width: 100%; 
@@ -423,7 +442,12 @@ label.sidenote-number {
 }
 
 label.margin-toggle:not(.sidenote-number) {
-    display: none; 
+    display: none;
+}
+
+label.margin-toggle {
+    color: #a00000;
+    cursor: pointer;
 }
 
 .iframe-wrapper {
