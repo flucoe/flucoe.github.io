@@ -512,14 +512,14 @@ label.margin-toggle {
     }
     
     label.margin-toggle:not(.sidenote-number) {
-        display: inline; 
+        display: inline;
     }
 
     .sidenote,
     .marginnote {
-        display: none; 
+        display: none;
     }
-    
+
     .margin-toggle:checked + .sidenote,
     .margin-toggle:checked + .marginnote {
         display: block;
@@ -529,11 +529,43 @@ label.margin-toggle {
         width: 95%;
         margin: 1rem 2.5%;
         vertical-align: baseline;
-        position: relative; 
+        position: relative;
     }
 
     label {
-        cursor: pointer; 
+        cursor: pointer;
+    }
+
+    /* Reorder toggle below paper details on mobile */
+    section#publications > p,
+    section#working-papers > p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section#publications > p > label.margin-toggle,
+    section#working-papers > p > label.margin-toggle {
+        order: 10;
+    }
+
+    section#publications > p > input.margin-toggle,
+    section#working-papers > p > input.margin-toggle {
+        order: 11;
+    }
+
+    section#publications > p > .marginnote,
+    section#working-papers > p > .marginnote {
+        order: 12;
+    }
+
+    section#publications > p > .papertitle,
+    section#publications > p > .coauthors,
+    section#publications > p > .paperdetails,
+    section#working-papers > p > .papertitle,
+    section#working-papers > p > .coauthors,
+    section#working-papers > p > .paperdetails {
+        order: 1;
+        flex-basis: 100%;
     }
 
     div.table-wrapper,
