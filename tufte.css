@@ -568,6 +568,18 @@ label.margin-toggle {
         flex-basis: 100%;
     }
 
+    /* Reduce gap between paper details and toggle label */
+    section#publications > p > .paperdetails,
+    section#working-papers > p > .paperdetails {
+        margin-bottom: 0.3rem;
+    }
+
+    /* Increase gap between each paper block (toggle included) and the next */
+    section#publications > p,
+    section#working-papers > p {
+        margin-bottom: 3rem;
+    }
+
     div.table-wrapper,
     table {
         width: 85%; 
